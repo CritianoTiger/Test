@@ -1,0 +1,9 @@
+git博客园使用教程：http://www.cnblogs.com/xiaoheike/p/4459946.html
+菜鸟教程：http://www.runoob.com/w3cnote/git-guide.html
+
+gitbash中指令：
+	cd e：	【进入本地E盘】
+	Git clone https://github.com/【GitHub用户名】/first.git    【clone（下载）Github Repository到本地E:\first】
+	git clone https://github.com/【GitHub用户名】/first.git second 【更改clone名字】
+	git add 1.txt	【将1.txt 提交到Index】
+	git status	【查看working dir 与Index 的不同】
