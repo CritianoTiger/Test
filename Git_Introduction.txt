@@ -7,3 +7,6 @@ gitbash中指令：
 	git clone https://github.com/【GitHub用户名】/first.git second 【更改clone名字】
 	git add 1.txt	【将1.txt 提交到Index】
 	git status	【查看working dir 与Index 的不同】
+	git commit –m ”myfirst”		【提交Index 中的文件到Head 并添加备注“myfirst"】
+	git push origin master 		【将Head 的文件push 到Github 服务器中】【master：是Repository的主分支】【每一个新建的Repository 都有一个默认的master分支】
+	git config --global credential.helper wincred 	【缓存你的账户信息，这样就不需要每次都输入账号了】
