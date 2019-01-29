@@ -1,0 +1,42 @@
+ <!-- 内容：注释、对象、HTML输出 -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8;"/><!-- 中文乱码解决语句 -->
+<h1>
+	<p id="name">人名</p>
+</h1>
+<!--HTML Notes!!!	-->
+<!--使用 window.alert() 弹出警告框。-->
+<!--使用 document.write() 方法将内容写到 HTML 文档中。-->
+<!--使用 innerHTML 写入到 HTML 元素。-->
+<!--使用 console.log() 写入到浏览器的控制台。-->
+
+<script>
+	var person={
+		firstname : "Jack",
+		lastname  : "Doe",
+		id        :  5566
+	};
+
+	function myFunction(){
+		for (var i = 2/*Things.length - 1*/; i > 0; i--) {
+			//var Things[20];
+			alert("屏幕弹窗");
+			window.alert("也是屏幕弹窗");
+		}
+	}
+
+	document.getElementById("name").innerHTML="尊敬的" + person.firstname;
+	document.write(typeof "John" + "\r");               // 返回 string 
+	document.write(typeof 3.14 + "\t");                  // 返回 number
+	document.write(typeof false + "\n");                 // 返回 boolean
+	document.write(typeof [1,2,3,4] + "\t");             // 返回 object
+	document.write(typeof {name:'John', age:34} + "\t"); // 返回 object 
+</script>
+
+<button onclick="myFunction()">有何贵干？</button>
+</body>
+</html>
