@@ -35,12 +35,12 @@ cc.Class({
 
     onLoad:function() {
     	var logo, s_max, s_min, seq, rf;
-    	logo = cc.find("UI_ROOT/start_Button");
-    	s_max = cc.scaleTo(1.5, 1.1); 
-    	s_min = cc.scaleTo(1.5, 0.9);
-    	seq = cc.sequence([s_max, s_min]);
-    	rf = cc.repeatForever(seq);
-    	logo.runAction(rf);
+    	// logo = cc.find("UI_ROOT/start_Button");
+    	// s_max = cc.scaleTo(1.5, 1.1); 
+    	// s_min = cc.scaleTo(1.5, 0.9);
+    	// seq = cc.sequence([s_max, s_min]);
+    	// rf = cc.repeatForever(seq);
+    	// logo.runAction(rf);
 
     	logo = cc.find("UI_ROOT/boom_1");
     	s_max = cc.scaleTo(2.4, 1.1); 
@@ -57,9 +57,23 @@ cc.Class({
     	logo.runAction(rf);
 
     	var start_Button = cc.find("UI_ROOT/start_Button")
+    	// 以下是一个长语句的写法
+    	// start_Button.runAction(cc.repeatForever(cc.rotateBy(1.2,360).easing(cc.easeCubicActionIn())));
+    	
+
+    	// 以下是分解的写法
     	var rot = cc.rotateBy(1.2,360).easing(cc.easeCubicActionIn());
     	rf = cc.repeatForever(rot);
     	start_Button.runAction(rf);
+
+    	//背景音乐
+    	cc.audioEngine.stopAll();
+    	cc.audioEngine.play(cc.url.raw("resource/sounds/BG.mp3"),true);
+
+    },
+
+    goto_game_scene:function(){
+    	cc.director.loadScene("game_scene");
 
     },
 
