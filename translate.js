@@ -1,3 +1,16 @@
+graphics //[测] 制图学; 制图法; 图表算法;
+rendering //翻译;表演;（墙壁的）初涂，打底;（建筑物等）透视图
+collider //碰撞机
+compile  //编译汇编
+digital  //数字的
+precious  //珍贵的
+execute  //生成
+buffer  //缓冲区
+statement  //声明
+definit  //定义
+declare  //声明
+library  //资源库
+
 subscript //下标
 warning
 error
