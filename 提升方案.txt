@@ -9,6 +9,7 @@ games and learning		游戏学习
 Edutainment	寓教于乐
 Game with a purpose	目的游戏
 Gamification	游戏化
+Serious Game	严肃游戏功能游戏
 
 
 目标用户人口数（池子总量）
@@ -21,4 +22,4 @@ Gamification	游戏化
 每步完成新手引导人数
 每步新手引导跳过人数比
 
-现状
+游戏评测、原理解析、游戏化理论、以猪王
