@@ -11,6 +11,7 @@ gitbash中指令：
 	git commit –m ”myfirst”		【提交Index 中的文件到Head 并添加备注“myfirst"】
 	git push origin master 		【将Head 的文件push 到Github 服务器中】【master：是Repository的主分支】【每一个新建的Repository 都有一个默认的master分支】
 	git config --global credential.helper wincred 	【缓存你的账户信息，这样就不需要每次都输入账号了】
+	git reset --hard【新文件会被删除，不在工作目录中的文件恢复，未清除回收站的前提】
 
 	git commit后面的操作步骤
 
